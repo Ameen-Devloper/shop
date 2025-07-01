@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google';
+import localFont from 'next/font/local'
 
 
 const geistSans = Geist({
@@ -23,12 +24,17 @@ const roboto = Roboto({
   variable: "--font-roboto"
 })
 
+const integralCF = localFont({
+  src: "../fonts/Fontspring-DEMO-integralcf-regular.otf",
+  variable: "--font-integral"
+})
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${geistMono.variable}`}
+        className={`${roboto.variable} ${integralCF.variable}`}
       >
         <Navbar />
         {children}
