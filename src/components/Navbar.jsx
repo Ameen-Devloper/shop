@@ -30,7 +30,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className={`bg-black  text-white py-2`}>
-                <p className='text-[8px] md:text:lg text-center'>Sign up and get 20% off to your first order. <Link href={"/"} className='underline'> Sign Up Now </Link></p>
+                <p className='text-[8px] md:text-lg text-center'>Sign up and get 20% off to your first order. <Link href={"/"} className='underline'> Sign Up Now </Link></p>
             </div>
             <div className='container mx-auto flex items-center justify-center gap-16 my-4'>
                 <div className='flex items-center justify-center gap-8'>
