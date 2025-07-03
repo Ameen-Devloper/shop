@@ -6,7 +6,11 @@ import img3 from "../../public/gucci.png"
 import img4 from "../../public/calvin.png"
 import img5 from "../../public/prada.png"
 import ProductCard from "@/components/ProductCard";
-import productImage1 from "../../public/image 8.png"
+import productImage1 from "../../public/image 8.png";
+import casualImage from "../../public/image 11.png"
+import formalImage from "../../public/image 13.png"
+import PartyImage from "../../public/image 12.png"
+import gymImage from "../../public/image 14.png"
 
 export default function Home() {
   const products = [
@@ -107,7 +111,56 @@ export default function Home() {
             ))
           }
         </div>
+        <div className="flex justify-center items-center my-18 ">
+          <button className="border border-black rounded-4xl py-2 px-16">View All</button>
+        </div>
       </div>
+      <div className="container mx-auto py-8 px-8  bg-[#F2F0F1]  rounded-3xl">
+        <h2 className="text-center pb-18 pt-12 font-integrl text-5xl text-black font-black">Browse by dress style</h2>
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="relative">
+            <Image
+              src={casualImage}
+              alt="Casual"
+              className="rounded-2xl w-full h-full object-cover"
+              width={500}
+              height={500}
+            />
+            <h2 className="absolute left-10 top-2 text-4xl font-bold text-black">Casual</h2>
+          </div>
+          <div className="md:col-span-2 relative">
+            <Image
+              src={formalImage}
+              alt="Formal"
+              className="rounded-2xl w-full h-full object-cover"
+              width={1000}
+              height={500}
+            />
+            <h2 className="absolute left-10 top-2 text-4xl font-bold text-black">Formal</h2>
+          </div>
+          <div className="md:col-span-2 relative">
+            <Image
+              src={PartyImage}
+              alt="Party"
+              className="rounded-2xl w-full h-full object-cover"
+              width={1000}
+              height={500}
+            />
+            <h2 className="absolute left-10 top-2 text-4xl font-bold text-black">Party</h2>
+          </div>
+          <div className="relative">
+            <Image
+              src={gymImage}
+              alt="gym"
+              className="rounded-2xl w-full h-full object-cover"
+              width={500}
+              height={500}
+            />
+            <h2 className="absolute left-10 top-2 text-4xl font-bold text-black">Gym</h2>
+          </div>
+        </div>
+      </div>
+
       <div className="h-screen"></div>
     </>
   );
