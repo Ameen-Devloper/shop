@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Roboto } from 'next/font/google';
 import localFont from 'next/font/local'
+import Footer from "@/components/Footer";
 
 
 const geistSans = Geist({
@@ -28,16 +29,21 @@ const integralCF = localFont({
   src: "../fonts/Fontspring-DEMO-integralcf-regular.otf",
   variable: "--font-integral"
 })
+const satoshiRegular = localFont({
+  src: "../fonts/Satoshi-Regular.woff",
+  variable: "--font-Satoshi"
+})
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${integralCF.variable}`}
+        className={`${roboto.variable} ${integralCF.variable} ${satoshiRegular.variable}`}
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

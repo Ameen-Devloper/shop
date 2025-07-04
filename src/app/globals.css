@@ -11,7 +11,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-roboto: var(--font-roboto);
-  --font-integrl: var(--font-integral)
+  --font-integrl: var(--font-integral);
+  --font-satoshi: var(--font-Satoshi)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,4 +26,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
