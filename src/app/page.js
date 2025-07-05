@@ -92,7 +92,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex justify-center items-center">
-            <Image src={heroImage} height={500} width={500} alt="hero Image" />
+            <Image src={heroImage} height={500} width={500} style={'width: auto'} alt="hero Image" />
           </div>
         </div>
       </div>
