@@ -50,12 +50,8 @@ const ColorSelector = () => {
                     ))}
                 </div>
 
-                {/* Show selected color */}
-                {selectedColor && (
-                    <p className="text-sm text-gray-700">
-                        Selected Color: <span className="font-medium">{selectedColor}</span>
-                    </p>
-                )}
+
+
             </div>
         </div>
     );

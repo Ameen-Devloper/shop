@@ -51,6 +51,7 @@ export default function Home() {
       rating: 4.5,
       image: productImage1,
     },
+
   ];
 
 

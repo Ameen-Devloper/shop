@@ -4,7 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 
 
 const SizeSlection = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [selectedTab, setSelectedTab] = useState(null)
     const sizes = ["XX-Small", "X-Small", "Small", "Medium", "Large", "X-Large", "XX-Large", "3X-Large", "4X-Large"]
     return (
