@@ -98,17 +98,28 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-black">
-        <div className="container mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8 py-8 place-items-center px-14">
-          <Image src={img1} height={160} width={160} alt="vaersace logo" className="h-[150] w-[150] lg:h-lg lg:w-lg object-cover" />
-          <Image src={img2} height={120} width={120} alt="Zara logo" className="h-[20] w-[20] lg:h-[150] lg:w-[150] object-cover" />
-          <Image src={img3} height={180} width={180} alt="prada logo" className="h-[150] w-[150] lg:h-xl lg:w-xl object-cover" />
-          <Image src={img4} height={180} width={180} alt="gucii logo" className="h-[150] w-[150] lg:h-xl lg:w-xl object-cover" />
-          <Image src={img5} height={180} width={180} alt="aclvin logo" className="h-[150] w-[150] lg:h-xl lg:w-xl object-cover col-span-full lg:col-span-1 mx-auto" />
+        <div className="container mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1 place-items-center px-4 sm:px-8 lg:px-14">
+          <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 relative">
+            <Image src={img1} alt="Versace logo" fill className="object-contain" />
+          </div>
+          <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 relative">
+            <Image src={img2} alt="Zara logo" fill className="object-contain" />
+          </div>
+          <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 relative">
+            <Image src={img3} alt="Gucci logo" fill className="object-contain" />
+          </div>
+          <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 relative">
+            <Image src={img4} alt="Prada logo" fill className="object-contain" />
+          </div>
+          <div className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 relative col-span-full lg:col-span-1">
+            <Image src={img5} alt="Calvin logo" fill className="object-contain" />
+          </div>
         </div>
+
       </div>
       <div className="container mx-auto px-14">
         <h2 className="text-center my-20 font-integrl text-5xl text-black font-black">New Arrivals</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2  lg:grid-cols-4 gap-4">
           {
             products.map((product) => (
               <ProductCard key={product.id} product={product} />

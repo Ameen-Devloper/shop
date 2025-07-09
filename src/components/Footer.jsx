@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="bg-[#F2F0F1] mt-60 md:mt-50 lg:mt-40">
             {/* Newsletter Section */}
-            <div className="bg-black text-white rounded-3xl max-w-6xl mx-auto px-8 py-10 flex flex-col lg:flex-row justify-between items-center gap-8 -translate-y-1/2">
+            <div className="bg-black text-white rounded-3xl max-w-6xl mx-auto px-8 py-10 flex flex-col lg:flex-row justify-between items-center gap-8 -translate-y-1/2 z-2">
                 <div className="text-center lg:text-left">
                     <h2 className="text-3xl md:text-4xl font-extrabold uppercase leading-tight">
                         Stay up to date about<br />our latest offers

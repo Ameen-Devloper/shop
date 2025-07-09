@@ -39,7 +39,7 @@ const PriceRangeSlider = () => {
                 className="flex justify-between items-center cursor-pointer select-none"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                <h2 className="text-xl font-bold">Price Range</h2>
+                <h2 className="text-lg font-bold">Price Range</h2>
                 <IoIosArrowDown
                     className={`text-xl transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""
                         }`}

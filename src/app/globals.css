@@ -12,7 +12,8 @@
   --font-mono: var(--font-geist-mono);
   --font-roboto: var(--font-roboto);
   --font-integrl: var(--font-integral);
-  --font-satoshi: var(--font-Satoshi)
+  --font-satoshi: var(--font-Satoshi);
+  --color-pri: #F2F0F1;
 }
 
 @media (prefers-color-scheme: dark) {

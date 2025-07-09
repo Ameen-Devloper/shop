@@ -3,9 +3,10 @@ import { IoStar } from "react-icons/io5";
 import { IoStarHalf } from "react-icons/io5";
 import { IoStarOutline } from "react-icons/io5";
 
+4.5
 
 const Star = ({ stars }) => {
-    const rating = Array.from({ length: 5 }, (elem, index) => {
+    const rating = Array.from({ length: 5 }, (_, index) => {
         let number = index + 0.5
         return (
             <span key={index}>
