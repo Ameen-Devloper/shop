@@ -1,8 +1,8 @@
-
+"use client"
 import ColorSelector from '@/components/ColorSelector'
 import PriceBarSelector from '@/components/PriceBarSelector'
 import Image from 'next/image'
-import React from 'react';
+import React, { useEffect } from 'react';
 import filterIcon from "../../../public/Vector.png"
 import { FaAngleRight } from "react-icons/fa6";
 import PriceRangeSlider from '@/components/PriceRangeSlider';
@@ -11,6 +11,7 @@ import DressStyleSelector from '@/components/DressStyleSelector';
 import ProductCard from '@/components/ProductCard'
 import productImage1 from "../../../public/image 8.png"
 import MobileFiter from '@/components/MobileFiter';
+import axios from 'axios';
 
 
 
@@ -98,7 +99,19 @@ const CasusalPage = () => {
             image: productImage1,
         },
     ];
+    const handleSubmit = async () => {
+        try {
+            const response = await axios.post("/api/createProduct", { productImage: "ameen", productTitle: "ali", Price: "grat" })
+            console.log(response.data.message);
 
+        } catch (error) {
+            console.log(error);
+
+        }
+    }
+    useEffect(() => {
+        handleSubmit()
+    }, [])
 
 
     const categories = ["T-shirts", "Shorts", "Shirts", "Hoodie", "Jeans"]
